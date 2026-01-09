@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 241, 215);
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+}
+.pics{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choice{
+    all:unset;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    transition: box-shadow 0.2s ease;
+}
+.button:hover{
+    box-shadow: 0 0 0 2px grey;
+}
+img:hover{
+    opacity: 0.7;
+}
+header{
+    position: fixed;
+    top: 0px;
+    background-color: navy;
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.the-whole-game{
+    margin-top: 130px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    font-size: 25px;
+}
+.score{
+    margin: 20px;
+}
+.msg-container{
+    background-color: rgb(255, 153, 0);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+#rst-btn{
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    transition: color 0.2s ease , box-shadow 0.2s ease;
+    font-size: 17px;
+}
+#rst-btn:hover{
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 0 0 2px grey;
+}
